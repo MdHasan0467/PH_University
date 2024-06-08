@@ -38,11 +38,11 @@ export const createStudentValidationSchema = z.object({
       emergencyContactNo: z.string(),
       bloodGroup: z.enum(['A+', 'AB+', 'B+', 'A-', 'O+']),
       presentAddress: z.string(),
-      permanentAddresss: z.string(),
+      permanentAddress: z.string(),
       guardian: guardianValidationSchema,
       localGuardian: localGuardianValidationSchema,
       admissionSemester: z.string(),
-      loacalImage: z.string().optional(),
+      localImage: z.string().optional(),
     }),
   }),
 });
